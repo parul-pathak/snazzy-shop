@@ -1,0 +1,69 @@
+body{
+  background: linear-gradient(to top left, rgba(0, 0, 46, 0.954), rgb(36, 36, 36)) center no-repeat;
+  background-size: cover;
+}
+
+.hero {
+  height: 90vh;
+}
+
+.banner-img{
+  animation: floating 3s linear infinite;
+}
+
+section{
+  margin: 20vh 0;
+}
+
+.featured .card{
+  transition: all .7s ease-in;
+  overflow: hidden;
+}
+
+.featured .card:hover{
+  /* transform: skew(20deg) !important; */
+  transform: scale(1.03);
+  box-shadow: 0px 4px 5px #666;
+}
+
+.featured .card .btn{
+  transform: translateY(40px);
+  transition: all 0.5s ease-in;
+}
+
+.featured .card:hover .btn{
+  transform: translateY(0);
+}
+
+
+.contact .form-control{
+  background-color: rgba(80, 80, 127, 0.899);
+}
+
+footer ul li a:hover {
+  color: #0dcaf0 !important;
+}
+
+
+@keyframes floating {
+  0%{
+    transform: translateY(0px);
+  }
+  
+  25%{
+    transform: translateY(-50px);
+  }
+  
+  50%{
+    transform: translateY(0px);
+  }
+
+
+  75%{
+    transform: translateY(50px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
